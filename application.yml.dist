@@ -1,0 +1,19 @@
+#spring.jpa.hibernate.ddl-auto: create
+##spring.datasource.url: "jdbc:mysql://localhost:3306/chat?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
+#spring.datasource.url: jdbc:postgresql://localhost:5432/chat
+#spring.datasource.username: chatter
+#spring.datasource.password: chatter
+#spring.freemarker.expose-request-attributes: true
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/chat
+    username: chatter
+    password: chatter
+    driverClassName: org.postgresql.Driver
